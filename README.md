@@ -4,7 +4,9 @@
 
 ## What is it?
 
-I already setup a Raylib project for you! Take it and enjoy! You don't need to know CMake!
+I already set up a Raylib project for you! Take it and enjoy! You don't need to know CMake!
+
+![image](https://github.com/meemknight/raylibCmakeSetup/assets/36445656/c50ab777-0cde-4d80-8df6-a0fd483f169d)
 
 
 <p>Opening the Solution:</p> 
