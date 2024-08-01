@@ -42,6 +42,9 @@ add_subdirectory(thirdparty/rlImGui)
 # DON'T ADD THE SOURCES BY HAND, they are already added with this macro
 file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
+# Add include directory
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
+
 
 add_executable("${CMAKE_PROJECT_NAME}")
 
