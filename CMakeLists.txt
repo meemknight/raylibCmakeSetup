@@ -6,12 +6,11 @@ cmake_minimum_required(VERSION 3.16...4.3)
 set(CMAKE_CXX_STANDARD 17)
 
 #! ! ! ! ! ! !
-#set this to true to ship the game!
+#set this to ON instead of OFF to ship the game!
 #basically this will change the RESOURCES_PATH to be the local path
 #! ! ! ! ! ! !
-#DELETE THE OUT FOLDER AFTER CHANGING THIS BECAUSE VISUAL STUDIO DOESN'T SEEM TO RECOGNIZE THIS CHANGE AND REBUILD!
-option(PRODUCTION_BUILD "Make this a production build" OFF)
-#DELETE THE OUT FOLDER AFTER CHANGING THIS BECAUSE VISUAL STUDIO DOESN'T SEEM TO RECOGNIZE THIS CHANGE AND REBUILD!
+set(PRODUCTION_BUILD OFF CACHE BOOL "Make this a production build" FORCE)
+#delete the out folder after changing if visual studio doesn recognize the change!
 
 if(MSVC) 
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Release>:Release>")
